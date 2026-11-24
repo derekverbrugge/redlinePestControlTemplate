@@ -136,23 +136,23 @@
             <p>Nesting activity and safe assessment of affected areas.</p>
           </article>
 
-          <article class="pest-card">
+          <article class="pest-card" hidden>
             <span class="pest-symbol" aria-hidden="true">◆</span>
             <h3>Cockroaches</h3>
             <p>Harborage, food sources, and moisture conditions.</p>
           </article>
 
-          <article class="pest-card">
+          <article class="pest-card" hidden>
             <span class="pest-symbol" aria-hidden="true">✺</span>
             <h3>Spiders</h3>
             <p>Identification and reduction of favorable conditions.</p>
           </article>
 
-          <article class="pest-card">
+          <article class="pest-card" hidden>
             <span class="pest-symbol" aria-hidden="true">◇</span>
             <h3>Other Pests</h3>
             <p>Discuss the signs you've noticed and next steps.</p>
-          </article>
+          </article><button type="button" id="more-cards" aria-expanded="false" class="button" style="grid-column:1/-1;justify-self:center">More</button>
         </div>
       </div>
     </section>
@@ -308,5 +308,5 @@
   </main>
 
   <div id="site-footer"></div>
-</body>
+<script>document.getElementById('more-cards').addEventListener('click',e=>{const b=e.currentTarget,open=b.getAttribute('aria-expanded')!=='true';document.querySelectorAll('.pest-card').forEach((c,i)=>c.hidden=i>=3&&!open);b.setAttribute('aria-expanded',String(open));b.textContent=open?'Show less':'More'});</script></body>
 </html>
