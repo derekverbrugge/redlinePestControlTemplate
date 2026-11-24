@@ -1,0 +1,5 @@
+# redlinePestControlTemplate
+
+- [REDLINE Pest Control | Take Back Your Space](https://derekverbrugge.github.io/redlinePestControlTemplate/)
+
+[Full text](https://derekverbrugge.github.io/redlinePestControlTemplate/llms-full.txt)
